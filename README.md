@@ -1,8 +1,11 @@
 
 Ejecutar los siguiente comandos
 
-1:  npm run typeorm migration:generate src/migrations/initial-schema
-2: npm run typeorm migration:run
+1: npm run typeorm migration:run
+2: npm run start:dev
+
+-La aplicacion inicia en el puerto 3000
+
 
 
 
