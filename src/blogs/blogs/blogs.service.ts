@@ -24,7 +24,7 @@ export class BlogsService {
     }
 
     async filterBlogsBySearchCriteria(searchCriteria: BlogSearchCriteriaDto) {
-
+    
         const criteria = Object.entries(searchCriteria).map(([key, value]) =>  ({[key]: ILike(`${value}%`)}));
 
         if ( !criteria.length ) throw new BadRequestException('No proporciono criterios de busqueda validos');

@@ -10,12 +10,10 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
 
     createTypeOrmOptions(): TypeOrmModuleOptions  {
         return {
-            type: 'postgres',
-            password: 'test123',
-            username: 'test',
+            type: 'sqlite',
             synchronize: false,
             autoLoadEntities: true,
-            database: 'blogs'
+            database: 'blogs.sqlite'
         };
     }
 }
